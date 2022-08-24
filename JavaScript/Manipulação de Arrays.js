@@ -25,4 +25,4 @@ console.log(`Pegando alguns elementos do array: ${coisas.slice(2, 4)}`)
 console.log(`Removendo um ou mais elementos do array em qualquer posição: ${coisas.splice(1, 2)} -> ${coisas}`)
 
 // Encontrar o índice de um elemento no array
-console.log(coisas.indexOf('jegue'))
+console.log(`Em qual índice esta o item 'jegue': ${coisas.indexOf('jegue')}`)
