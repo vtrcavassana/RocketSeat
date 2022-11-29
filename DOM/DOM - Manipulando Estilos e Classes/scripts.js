@@ -1,21 +1,19 @@
-// Alterando Estilos com Style
-const element = document.querySelector('body')
-element.style.backgroundColor = '#7159c1'
-console.log(element.style.backgroundColor)
+// Alterando com classList
 
-// Alterando Estilos com classList
-const element1 = document.querySelector('body')
-element1.classList.add('active', 'green')
-console.log(element1.classList)
+const elementMaster = document.querySelector('body')
 
-// Removendo Estilos com classList
-const element2 = document.querySelector('body')
-element2.classList.remove('active')
+// Exibe a lista de classes do elemento
+console.log(elementMaster.classList)
 
-// Verificando se existe uma classe
-const element3 = document.querySelector('body')
-console.log(element3.classList.contains('active')) // true se não tiver sido removido
+// Adiciona uma classe ao elemento
+elementMaster.classList.add('active')
 
-// Alternando classes
-const element4 = document.querySelector('body')
-element4.classList.toggle('active')
+// Remove uma classe do elemento
+elementMaster.classList.remove('active')
+
+// É possível adicionar e remover mais de uma classe ao mesmo tempo (comentado para não dar erro, caso queira testar, descomente)
+elementMaster.classList.add('active', 'green')
+// elementMaster.classList.remove('active', 'green')
+
+// Alternar uma classe (se ela existir, remove, se não existir, adiciona)
+elementMaster.classList.toggle('active') // -> remove, pois já existe a classe (linha 15)

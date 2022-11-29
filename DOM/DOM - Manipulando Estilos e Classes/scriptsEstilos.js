@@ -1,7 +1,8 @@
+// Alterando Estilos com JavaScript
+
 // getElementById(id) -> Pega do HTML o elemento com o id especificado
 const elementById = document.getElementById('titulo-blog')
 console.log(elementById)
-
 
 // getElementsByClassName(name) -> Pega do HTML todos os elementos com a classe especificada
 const elementByClassName = document.getElementsByClassName('post')
